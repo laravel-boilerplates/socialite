@@ -1,6 +1,6 @@
 {
     "name": "laravel-boilerplates/socialite",
-    "description": "My personal boilerplate for getting the SocialiteProviders/Manager package set up with auth scaffolding.",
+    "description": "A boilerplate for the SocialiteProviders/Manager package with auth scaffolding.",
     "keywords": [
         "laravel-boilerplates",
         "laravel",
