@@ -2,7 +2,6 @@
 
 namespace LaravelBoilerplates\Socialite;
 
-use LaravelBoilerplates\Socialite\Components\LoginButtons;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

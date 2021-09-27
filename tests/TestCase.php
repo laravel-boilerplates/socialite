@@ -3,8 +3,8 @@
 namespace LaravelBoilerplates\Socialite\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use LaravelBoilerplates\Socialite\SocialiteServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
