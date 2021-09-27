@@ -3,7 +3,6 @@
 use LaravelBoilerplates\Socialite\Controllers\SocialSessionController;
 use LaravelBoilerplates\Socialite\Controllers\RegisteredSocialUserController;
 use Illuminate\Support\Facades\Route;
-use Laravel\Socialite\Facades\Socialite;
 
 Route::group(['middleware' => ['web', 'guest']], function () {
     Route::get('/auth/{provider}/redirect', [SocialSessionController::class, 'create'])->name('social.login');
