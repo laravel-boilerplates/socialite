@@ -1,0 +1,64 @@
+{
+    "name": "laravel-boilerplates/socialite",
+    "description": "My personal boilerplate for getting the SocialiteProviders/Manager package set up with auth scaffolding.",
+    "keywords": [
+        "laravel-boilerplates",
+        "laravel",
+        "socialite"
+    ],
+    "homepage": "https://github.com/laravel-boilerplates/socialite",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Wiser",
+            "email": "dan@wiserwebsolutions.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/contracts": "^8.37",
+        "laravel/socialite": "^5.2",
+        "owenvoke/blade-fontawesome": "^1.9",
+        "socialiteproviders/manager": "^4.0",
+        "spatie/laravel-package-tools": "^1.4.3"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^5.3",
+        "orchestra/testbench": "^6.15",
+        "pestphp/pest": "^1.18",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "spatie/laravel-ray": "^1.23",
+        "vimeo/psalm": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelBoilerplates\\Socialite\\": "src",
+            "LaravelBoilerplates\\Socialite\\Controllers\\": "controllers",
+            "LaravelBoilerplates\\Socialite\\Components\\": "components",
+            "LaravelBoilerplates\\Socialite\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelBoilerplates\\Socialite\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelBoilerplates\\Socialite\\SocialiteServiceProvider",
+                "OwenVoke\\BladeFontAwesome\\BladeFontAwesomeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
